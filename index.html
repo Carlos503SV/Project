@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACACYPAC de R.L.</title>
+    <link rel="stylesheet" href="./diseño/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header-wrapper">
+        
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="header-contacts">
+                    <a href="mailto:comunicacionesyrse@coop.com" class="top-link top-email">
+                        <i class="fa-solid fa-envelope"></i> Escríbenos: comunicacionesyrse@coop.com
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="navbar-container">
+                
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./diseño/logo_blanco.png" alt="ACACYPAC de R.L.">
+                    </a>
+                </div>
+                
+                <div class="nav-container" id="navContainer">
+                    <ul class="nav-links">
+                        <li class="has-dropdown">
+                            <a>Conócenos <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-column">
+                                    <ul>
+                                        <li><a href="./web/legado.html">Legado Histórico</a></li>
+                                        <li><a href="./web/mision.html">Misión y Visión</a></li>
+                                        <li><a href="./web/valores.html">Valores Institucionales</a></li>
+                                        <li><a href="./web/principios.html">Principios Cooperativos</a></li>
+                                        <li><a href="./web/valoresCoop.html">Valores Cooperativos</a></li>
+                                        <li><a href="./web/juntaD.html">Junta Directiva</a></li>
+                                        <li><a href="./web/gobierno.html">Gobierno Corporativo</a></li>
+                                        <li><a href="./web/inf_finan.html">Información Financiera</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <a>Productos <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-column">
+                                    <ul>
+                                        <li><a href="./web/creditos.html">Créditos</a></li>
+                                        <li><a href="./web/ahorros.html">Ahorros</a></li>
+                                        <li><a href="./web/seguros.html">Seguros</a></li>
+                                        <li><a href="./web/tarjetas.html">Tarjetas</a></li>
+                                        <li><a href="./web/servicios.html">Servicios</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <a>Contáctanos <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-column">
+                                    <ul>
+                                        <li><a href="./web/ubicacion.html">Red de agencias</a></li>
+                                        <li><a href="../web/contacto.html">Contáctanos</a></li>
+                                        <li><a href="./web/horarios.html">Horarios de atención</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <a>RSE <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-column">
+                                    <ul>
+                                        <li><a href="#">Certamen de oratoria</a></li>
+                                        <li><a href="#">Proyecto de becas</a></li>
+                                        <li><a href="#">Donativos al hospital</a></li>
+                                        <li><a href="#">Donativo al hogar</a></li>
+                                        <li><a href="#">Eventos de la comunidad</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <a>Blog <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-column">
+                                    <ul>
+                                        <li><a href="#">Blog de noticias recientes</a></li>
+                                        <li><a href="#">Blog de emprendimiento</a></li>
+                                        <li><a href="#">Blog de Finanzas</a></li>
+                                        <li><a href="#">Blog de Educación</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="nav-actions-mobile">
+                        <a href="https://wa.me/50376048548" class="btn-portal"><i class="fa-brands fa-whatsapp"></i> 7604 8548</a>
+                    </div>
+                </div>
+
+                <div class="nav-actions">
+                    <a href="https://wa.me/50376048548" class="btn-portal hide-mobile"><i class="fa-brands fa-whatsapp"></i> 7604 8548</a>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+<main class="main-content">
+        <div class="promo-slider-container">
+    <div class="promo-slider-track" id="promoSliderTrack">
+        
+        <script>
+            (function() {
+                try {
+                    var cache = localStorage.getItem('carrusel_imagenes_cache');
+                    if (cache) {
+                        var validPairs = JSON.parse(cache);
+                        if (validPairs && validPairs.length > 0) {
+                            var html = validPairs.map(function(pair) {
+                                // Aquí adentro es donde incluimos el decoding="sync"
+                                return `
+                                    <div class="promo-slide">
+                                        <picture style="width: 100%; height: 100%;">
+                                            <source media="(min-width: 992px)" srcset="${pair.pc}">
+                                            <img src="${pair.movil}" alt="Anuncio publicitario ACACYPAC" fetchpriority="high" decoding="sync">
+                                        </picture>
+                                    </div>
+                                `;
+                            }).join('');
+                            // Inyecta las imágenes ANTES de pintar la pantalla
+                            document.write(html);
+                        }
+                    }
+                } catch (e) { console.error("Error en pre-carga de carrusel", e); }
+            })();
+        </script>
+
+    </div>
+</div>
+
+    </div>
+</div>
+    </main>
+
+    <section class="intro-dynamic">
+        <div class="intro-container">
+            <span class="intro-subtitle">Nuestras cuentas de ahorro.</span>
+            <h1 class="intro-title">Nuestros mejores servicios</h1>
+            <div class="dynamic-text-box">
+                <span id="changing-text" class="text-aqua visible">Depósitos a plazo</span>
+            </div>
+        </div>
+    </section>
+<!-- BOTÓN FLOTANTE VOLVER ARRRIBA -->
+<a id="scrollToTopBtn" class="scroll-to-top" aria-label="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a2707476784101c2d093f6c/1jqk78rt0';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<div id="comunicado-inicial" class="capa-fondo-mensaje">
+    <div class="contenedor-mensaje-interno">
+        <button id="btnCerrarMensaje" class="boton-cerrar-mensaje" aria-label="Cerrar ventana">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="./diseño/recursos/comunicado/debicoop.jpg" alt="Información Relevante ACACYPAC">
+    </div>
+</div>
+<!--End of Tawk.to Script-->
+    <footer class="main-footer" id="contacto">
+        <div class="footer-container">
+            
+            <!-- Columna 1: Contactos destacados -->
+            <div class="footer-col footer-contact-block">
+                <div class="phone-badge">
+                   <a href="tel:+50324459200" class="footer-phone-link">
+                        <i class="fa-solid fa-phone-flip phone-icon-left"></i>
+                            <span>2445-9200</span>
+                    </a>
+                </div>
+            
+                <a href="mailto:comunicacionesyrse@coop.com" class="footer-email-link">
+                     <p class="footer-email-text">comunicacionesyrse@coop.com</p>
+                </a>
+                <a href="https://wa.me/50376048548" target="_blank" class="footer-whatsapp-link">
+                    <i class="fa-brands fa-whatsapp"></i> 7604 8548
+                </a>
+            </div>
+
+            <!-- Columna 2: Identidad Corporativa / Logo -->
+            <div class="footer-col footer-identity">
+                <div class="logo">
+                    <img src="./diseño/ACACYPAC-BLANCO.png">
+                </div>
+            </div>
+
+            <!-- Columna 3: Servicios -->
+            <div class="footer-col footer-services-list">
+                <h4>Productos:</h4>
+                <ul>
+                    <li><a href="./web/creditos.html">Créditos</a></li>
+                    <li><a href="./web/ahorros.html">Ahorros</a></li>
+                    <li><a href="./web/seguros.html">Seguros</a></li>
+                    <li><a href="./web/tarjetas.html">Tarjetas</a></li>
+                    <li><a href="./web/servicios.html">Servicios</a></li>
+            </div>
+
+            <!-- Columna 4: Redes Sociales Circulares -->
+            <div class="footer-col footer-social-block">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/AcacypacDeRl/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/ACACYPACDERL" aria-label="X / Twitter"><i class="fa-brands fa-x"></i></a>
+                    <a href="https://www.instagram.com/acacypac.de.r.l/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@acacypacder.l9775" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 ACACYPAC de R.L. - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./funcionalidad/script.js"></script>
+</body>
+</html>
